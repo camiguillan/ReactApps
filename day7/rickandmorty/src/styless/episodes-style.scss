@@ -1,0 +1,75 @@
+@import './app-style-variables.scss';
+
+
+/*EPISODES PAGE STYLING*/
+
+.div-container{
+    align-items: center;
+    width: 100%;
+    
+
+    .htitle{
+        margin: 1% 35% 0 35%;
+        padding: 1%;
+        color:$white-color;
+        width: auto;
+        background-color: $sea-green-color;
+        text-align: center;
+        box-shadow: $shadow;
+    }
+
+    .divep{
+        //display: grid;
+        align-items: center; 
+        //grid-template-columns: 40% 15% 5%;
+        column-gap: 1%;
+        box-sizing: border-box;
+        margin: 0 24% 0.1% ;
+        width: 50%;
+
+        .infoep{
+            font-size: 24px;
+            padding: 5% 10%;
+            margin: 5%;
+            width: 100%;
+            box-sizing: border-box;
+            display: inline-block;
+            background-color: $light-green-color;
+            border-radius: 2%;
+            color: $dark-grey-color;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+    }
+
+    .divlink{
+        //margin: $link-margin;
+        padding: 1%;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        //background-color: $back-color;
+        
+
+        .linkChar{
+            color: $white-color;
+            background-color: $green-color;
+            font-size: 20px;
+            margin: 2%;
+            font-family: $segoe-font;
+            box-sizing: border-box;
+            border-radius: $five-radius;
+            border: none;
+        
+
+            &:hover{
+                color: $black-color;
+                background-color: $sea-green-color;
+                transition: $two-secs-transition;
+            }
+            
+        }
+        
+
+    }
+
+}

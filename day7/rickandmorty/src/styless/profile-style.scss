@@ -1,0 +1,89 @@
+@import './app-style-variables.scss';
+
+/*PROFILE PAGE STYLING*/
+.divProfile{
+    //border-color: rgb(20, 20, 18);
+    box-shadow: $shadow;
+    padding: 0.1% 2%;
+    text-align: left;
+    background-color: $light-green-color;
+    border-radius: 10px;
+    width: 55%;
+    margin: 1% 20%; 
+
+
+    .h1Profile{
+         @include headerTitles
+    }
+
+    .divlink{
+        align-items: right;
+        width: 100%;
+        margin: 0 35% 2%;
+    
+       
+        
+        .linkProfile{
+            color: $white-color;
+            background-color: $green-color;
+            font-size: 20px;
+            margin: 5px;
+            font-family: $segoe-font;
+            box-sizing: border-box;
+            border-radius: $five-radius;
+            border:none;
+            transition: $two-secs-transition;
+        
+            &:hover{
+               @include hoverNavButtons;
+            }
+            
+        }
+
+    }
+
+    .profile{
+        display: grid;
+        align-items: center; 
+        grid-template-columns: 45% 50% 2%;
+        column-gap: 1%;
+        box-sizing: border-box; 
+      
+        
+        .infoP{
+            font-size: 24px;
+            margin: 5%;
+            width: 100%;
+            box-sizing: border-box;
+            display: inline-block;
+            font-family: $segoe-font;
+        }
+    
+        button {
+     
+            @include navButtons;
+            padding: 10px;
+            margin: 5%;
+
+            &:hover{
+                background-color: $pale-green-color;
+                color: $moss-green-color;
+                }
+            
+        }
+
+        
+        .imgP {
+            margin-bottom: 2%;
+            width: 100%;
+            border-radius: 3%;
+            margin: 3%;
+
+            &:hover {
+                box-shadow: $shadow;
+            }
+        }
+    }
+
+
+}

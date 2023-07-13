@@ -1,0 +1,78 @@
+//colors
+$dark-grey-color: rgb(46, 44, 44);
+$light-green-color: rgb(158, 224, 185);
+$pale-green-color:  rgb(219, 244, 231);
+$green-color: rgb(39, 145, 85);
+$dark-green-color: rgb(15, 80, 51);
+$sea-green-color: rgb(77, 145, 124);
+$black-color:rgba(0, 0, 0, 0.687);
+$white-color: rgb(246, 247, 247);
+$moss-green-color:  rgb(85, 150, 109);
+
+//FONTS FAMILIES
+$franklin-font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$segoe-font:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+//FONT SIZES
+$font-size-per: 150%;
+
+
+//pointers
+$pointer-cursor: pointer;
+$five-radius: 5px;
+$two-secs-transition: background-color 0.2s ease;
+$align-margin: 2% auto 1% ;
+$shadow: 0 4px 8px 0 $black-color;
+
+
+
+//MIXES
+@mixin centerItems{
+    margin: 1% auto 1% ;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+
+@mixin headerTitles{
+    font-family: $franklin-font;
+    font-size: 400%;
+    color: $dark-green-color; 
+    margin: 0%; 
+}
+
+@mixin bodyConfig{
+    align-items: center;
+    background-color: $pale-green-color;
+
+}
+
+
+@mixin navButtons{
+    padding: 0.5%;
+    font-size: 100% ;
+    border: none;
+    border-radius: $five-radius;
+    background-color: $moss-green-color;
+    color: $dark-grey-color;
+    cursor:$pointer-cursor;
+    margin: 1%;
+    margin-top: 0.1%;
+    height: 30%;
+    box-shadow:$shadow;
+    box-sizing: border-box;
+}
+
+@mixin hoverNavButtons{
+    background-color: $dark-green-color;
+    color: $white-color;
+
+}
+
+@mixin pagStyles($margin){
+    margin: $margin;
+    margin-bottom: 1.5%;
+    color: $black-color;
+
+}

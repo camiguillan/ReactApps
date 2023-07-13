@@ -1,0 +1,31 @@
+.users {
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 40rem;
+  }
+  
+  .users ul {
+    list-style: none;
+    padding: 1rem;
+   
+  }
+  
+  .users li {
+    border: 2px solid #b2c7d2;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: #d8e4ea;
+  }
+
+  .unavailable{
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 40rem;
+    border: 2px solid #d2b2ba;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: #ead8d8;
+    text-align: center;
+    color: #d81212;
+  }

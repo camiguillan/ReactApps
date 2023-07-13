@@ -1,0 +1,131 @@
+
+.cont{
+    margin: 15%;
+    margin-left: 20%;
+    border-width: 1%;
+    border-color: rgb(43, 137, 226);
+    border-style: solid;
+    position: relative; /*can manipulate height, width, left, top....*/
+    display: grid;
+    justify-items: center;
+    align-items: center; /*it does not work with block display*/
+    width: 60%;
+
+
+}
+
+
+.comps{
+    border-width: 1%;
+    border-color: blueviolet;
+    width: 50%;
+    background-color: rgb(178, 141, 212);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    border-style: solid;
+    margin: 2%;
+    padding: 4%;
+    font-size: 100%;
+    height: 10%;
+}
+
+h1{
+    padding: 1%;
+    border: solid;
+    border-color: rgb(174, 57, 166);
+    margin: 1%;
+}
+
+.events{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid;
+    justify-content: space-between;
+    border-color: rgb(93, 165, 42);
+    width: 98%;
+    margin: 2%;
+   
+}
+
+.red-input{
+    margin: 2%;
+}
+
+.red-input:focus {
+    background: rgb(211, 176, 176);
+    color: red;
+  }
+
+.yes-no{
+    
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    margin: 1%;
+    justify-content:  center;
+    align-items: center;
+    
+  
+}
+
+.check{
+    width: 50%;
+    align-items: center;
+    display: flex;
+
+}
+
+input{
+    margin: 5%;
+}
+
+/* Labels for checked inputs */
+input:checked + label {
+  color: rgb(224, 135, 34);
+ 
+}
+
+/* Radio element, when checked */
+input[type="radio"]:checked {
+  box-shadow: 0 0 0 3px orange;
+}
+
+/* Checkbox element, when checked */
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px hotpink;
+}
+
+.select{
+    margin: 1%;
+    position: relative;
+    padding-top: 2%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+option:checked {
+    box-shadow: 0 0 0 3px lime;
+    color: rgb(55, 255, 0);
+  }
+
+button{
+    background-color: rgb(222, 207, 238);
+    width: 80%;
+    border-radius: 5%;
+    margin: 2%;
+    border: solid;
+    border-color: blueviolet;
+
+}
+
+button:hover{
+    background-color: blueviolet;
+    color: azure;
+}
+

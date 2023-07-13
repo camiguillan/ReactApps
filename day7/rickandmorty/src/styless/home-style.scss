@@ -1,0 +1,82 @@
+@import './app-style-variables.scss';
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+//https://getbootstrap.com/docs/5.3/components/buttons/
+
+body{
+    // align-items: center;
+    // background-color: $pale-green-color;
+    //overflow-x: hidden; 
+    @include bodyConfig;
+}
+
+
+/*HOME STYLING*/
+.homeDiv{
+    // margin: 2% auto 1% ;
+    // width: 100%;
+    // text-align: center;
+    // align-items: center;
+
+    @include centerItems;
+
+    .homeH1{
+        // font-family: $franklin-font;
+        // font-size: 400%;
+        // color: $dark-green-color; 
+        // margin: 0.5%; 
+        @include headerTitles;
+    }
+}
+
+.homeDiv2{
+    // margin: 1% auto 1% ;
+    // width: 100%;
+    // text-align: center;
+    // align-items: center;
+    @include centerItems;
+
+
+    .homeLink{
+        color: $white-color;
+        background-color:$green-color;
+        font-size: 24px;
+        margin: 1%;
+        border-radius: $five-radius;
+        font-family: $segoe-font; 
+        border: none;
+        box-shadow: $shadow;
+    }
+
+    .homeLink:hover{
+        transition: $two-secs-transition;
+        color: $dark-green-color;
+        background-color: $light-green-color;
+    }
+
+    .btn {
+      
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        //--bs-btn-bg: var($green-color);
+        --bs-btn-bg: #{shade-color($green-color, 10%)};
+        --bs-btn-border-color: shade-color($green-color, 10%);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #{shade-color($light-green-color, 10%)};
+        --bs-btn-hover-border-color: #{shade-color($light-green-color, 10%)};
+        --bs-btn-focus-shadow-rgb: var($light-green-color);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #{shade-color($green-color, 20%)};
+        --bs-btn-active-border-color: #{shade-color($green-color, 20%)};
+      }
+
+}
+
+.homeP{ /*Paragraph of the home page*/
+    font-size: 150%;
+    font-family: $segoe-font;
+    width: 50%;
+    margin: 1% 25% 2%;
+    height: 1%;
+    margin-bottom: 1%;
+}
